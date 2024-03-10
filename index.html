@@ -1,0 +1,252 @@
+
+<!-- saved from url=(0041)https://yaden2018.github.io/multispeaker/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>ADVERSARIAL SPEECH FOR VOICE PRIVACY PROTECTION AGAINST PERSONALIZED
+SPEECH GENERATION
+</title>
+    <link rel="shortcut icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
+    <link rel="icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
+    <link rel="apple-touch-icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
+</head>
+<body>
+<script type="text/javascript" async="" src="./ADVERSARIAL SPEECH FOR VOICE PRIVACY PROTECTION AGAINST PERSONALIZED
+SPEECH GENERATION/analytics.js.download"></script><script async="" src="./ADVERSARIAL SPEECH FOR VOICE PRIVACY PROTECTION AGAINST PERSONALIZED
+SPEECH GENERATION/js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-125850295-1');
+</script>
+
+<article>
+    <header>
+        <h1>ADVERSARIAL SPEECH FOR VOICE PRIVACY PROTECTION AGAINST PERSONALIZED
+SPEECH GENERATION</h1>
+    </header>
+</article> 
+<div><b>Authors:</b> ShiHao Chen, Liping Chen, Jie Zhang, KongAik Lee, Zhen-Hua Ling, Li-Rong Dai</a> </div>
+ 
+<div><b>Abstract:</b> The rapid progress in personalized speech generation technology, including personalized text-to-speech (TTS) and voice conversion (VC), poses a challenge in distinguishing between generated and real speech for human listeners, resulting in an urgent demand in protecting speakers' voices from malicious misuse. In this regard, we propose a speaker protection method based on adversarial attacks. The proposed method perturbs speech signals by minimally altering the original speech while rendering downstream speech generation models unable to accurately generate the voice of the target speaker. For validation, we employ the open-source pre-trained YourTTS model for speech generation and protect the target speaker's speech in the white-box scenario. Automatic speaker verification (ASV) evaluations were carried out on the generated speech as the assessment of the voice protection capability. Our experimental results show that we successfully perturbed the speaker encoder of the YourTTS model using the gradient-based I-FGSM adversarial perturbation method. Furthermore, the adversarial perturbation is effective in preventing the YourTTS model from generating the speech of the target speaker.
+</div> 
+
+<br/>
+<br/>
+<br/>
+
+
+Here, we showcase the adversarial samples generated using the I-FGSM method to attack the YourTTS model, along with the speech generated from both adversarial samples and reference speech. We randomly selected one sentence each from 2 males and 2 females and synthesized them using the Coqui TTS tool. In this context, 'Reference Speech' is defined as the original speech that is used as reference speech in YourTTS, 'IFGSM' as the speech with adversarial samples added, 'TTS' as the speech synthesized using Reference Speech for TTS, 'VC Source' as the source speech for VC, 'VC' as the speech synthesized using Reference Speech for VC, 'TTS*' as the speech synthesized using adversarial samples for TTS, and 'VC*' as the speech synthesized using adversarial samples for VC.<div>
+    <h3>1089</h3>
+    
+	<table><tbody><tr>
+		<td>Reference Speech:</td>
+		<td>
+			<audio controls="">
+				<source src="wav\1089-134691-0002rec.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>IFGSM:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1089-134691-0002adv.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>TTS:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1089-134691-0002tts.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>TTS*:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1089-134691-0002advtts.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>VC Source:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1089-134691-0002source.wav">
+			</audio>
+		</td>
+		<td>VC:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1089-134691-0002vc.wav">
+			</audio>
+		</td>
+		<td>VC*:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1089-134691-0002advvc.wav">
+			</audio>
+		</td>
+	</tr>
+</tbody></table>
+    <h3>1188</h3>
+    
+	<table><tbody><tr>
+		<td>Reference Speech:</td>
+		<td>
+			<audio controls="">
+				<source src="wav\1188-133604-0005rec.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>IFGSM:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1188-133604-0005adv.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>TTS:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1188-133604-0005tts.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>TTS*:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1188-133604-0005advtts.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>VC Source:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1188-133604-0005source.wav">
+			</audio>
+		</td>
+		<td>VC:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1188-133604-0005vc.wav">
+			</audio>
+		</td>
+		<td>VC*:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/1188-133604-0005advvc.wav">
+			</audio>
+		</td>
+	</tr>
+</tbody></table>
+</tbody></table>
+    <h3>121</h3>
+    
+	<table><tbody><tr>
+		<td>Reference Speech:</td>
+		<td>
+			<audio controls="">
+				<source src="wav\121-127105-0002rec.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>IFGSM:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/121-127105-0002adv.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>TTS:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/121-127105-0002tts.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>TTS*:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/121-127105-0002advtts.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>VC Source:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/121-127105-0002source.wav">
+			</audio>
+		</td><td>
+		<td>VC:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/121-127105-0002vc.wav">
+			</audio>
+		</td>
+		<td>VC*:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/121-127105-0002advvc.wav">
+			</audio>
+		</td>
+	</tr>
+</tbody></table>
+</tbody></table>
+    <h3>8463</h3>
+    
+	<table><tbody><tr>
+		<td>Reference Speech:</td>
+		<td>
+			<audio controls="">
+				<source src="wav\8463-287645-0003rec.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>IFGSM:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/8463-287645-0003adv.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>TTS:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/8463-287645-0003tts.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>TTS*:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/8463-287645-0003advtts.wav">
+			</audio>
+		</td>
+		<td></td>
+		<td>VC Source:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/8463-287645-0003source.wav">
+			</audio>
+		</td><td>
+		<td>VC:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/8463-287645-0003vc.wav">
+			</audio>
+		</td>
+		<td>VC*:</td>
+		<td>
+			<audio controls="">
+				<source src="wav/8463-287645-0003advvc.wav">
+			</audio>
+		</td>
+	</tr>
+</tbody></table>
+</div>
+
+</body></html>
