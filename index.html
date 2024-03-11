@@ -1,252 +1,255 @@
-
-<!-- saved from url=(0041)https://yaden2018.github.io/multispeaker/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="Font-Awesome-4.7/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
     
-    <title>ADVERSARIAL SPEECH FOR VOICE PRIVACY PROTECTION AGAINST PERSONALIZED
-SPEECH GENERATION
-</title>
-    <link rel="shortcut icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
-    <link rel="icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
-    <link rel="apple-touch-icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
+    <title>Catalyst HTML CSS Template</title>
+<!--
+Catalyst Template
+http://www.templatemo.com/tm-499-catalyst
+-->
 </head>
+
 <body>
-<script type="text/javascript" async="" src="./ADVERSARIAL SPEECH FOR VOICE PRIVACY PROTECTION AGAINST PERSONALIZED
-SPEECH GENERATION/analytics.js.download"></script><script async="" src="./ADVERSARIAL SPEECH FOR VOICE PRIVACY PROTECTION AGAINST PERSONALIZED
-SPEECH GENERATION/js"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-    gtag('config', 'UA-125850295-1');
-</script>
-
-<article>
-    <header>
-        <h1>ADVERSARIAL SPEECH FOR VOICE PRIVACY PROTECTION AGAINST PERSONALIZED
-SPEECH GENERATION</h1>
-    </header>
-</article> 
-<div><b>Authors:</b> ShiHao Chen, Liping Chen, Jie Zhang, KongAik Lee, Zhen-Hua Ling, Li-Rong Dai</a> </div>
- 
-<div><b>Abstract:</b> The rapid progress in personalized speech generation technology, including personalized text-to-speech (TTS) and voice conversion (VC), poses a challenge in distinguishing between generated and real speech for human listeners, resulting in an urgent demand in protecting speakers' voices from malicious misuse. In this regard, we propose a speaker protection method based on adversarial attacks. The proposed method perturbs speech signals by minimally altering the original speech while rendering downstream speech generation models unable to accurately generate the voice of the target speaker. For validation, we employ the open-source pre-trained YourTTS model for speech generation and protect the target speaker's speech in the white-box scenario. Automatic speaker verification (ASV) evaluations were carried out on the generated speech as the assessment of the voice protection capability. Our experimental results show that we successfully perturbed the speaker encoder of the YourTTS model using the gradient-based I-FGSM adversarial perturbation method. Furthermore, the adversarial perturbation is effective in preventing the YourTTS model from generating the speech of the target speaker.
-</div> 
-
-<br/>
-<br/>
-<br/>
-
-
-Here, we showcase the adversarial samples generated using the I-FGSM method to attack the YourTTS model, along with the speech generated from both adversarial samples and reference speech. We randomly selected one sentence each from 2 males and 2 females and synthesized them using the Coqui TTS tool. In this context, 'Reference Speech' is defined as the original speech that is used as reference speech in YourTTS, 'IFGSM' as the speech with adversarial samples added, 'TTS' as the speech synthesized using Reference Speech for TTS, 'VC Source' as the source speech for VC, 'VC' as the speech synthesized using Reference Speech for VC, 'TTS*' as the speech synthesized using adversarial samples for TTS, and 'VC*' as the speech synthesized using adversarial samples for VC.<div>
-    <h3>1089</h3>
     
-	<table><tbody><tr>
-		<td>Reference Speech:</td>
-		<td>
-			<audio controls="">
-				<source src="wav\1089-134691-0002rec.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>IFGSM:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1089-134691-0002adv.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>TTS:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1089-134691-0002tts.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>TTS*:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1089-134691-0002advtts.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>VC Source:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1089-134691-0002source.wav">
-			</audio>
-		</td>
-		<td>VC:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1089-134691-0002vc.wav">
-			</audio>
-		</td>
-		<td>VC*:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1089-134691-0002advvc.wav">
-			</audio>
-		</td>
-	</tr>
-</tbody></table>
-    <h3>1188</h3>
-    
-	<table><tbody><tr>
-		<td>Reference Speech:</td>
-		<td>
-			<audio controls="">
-				<source src="wav\1188-133604-0005rec.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>IFGSM:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1188-133604-0005adv.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>TTS:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1188-133604-0005tts.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>TTS*:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1188-133604-0005advtts.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>VC Source:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1188-133604-0005source.wav">
-			</audio>
-		</td>
-		<td>VC:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1188-133604-0005vc.wav">
-			</audio>
-		</td>
-		<td>VC*:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/1188-133604-0005advvc.wav">
-			</audio>
-		</td>
-	</tr>
-</tbody></table>
-</tbody></table>
-    <h3>121</h3>
-    
-	<table><tbody><tr>
-		<td>Reference Speech:</td>
-		<td>
-			<audio controls="">
-				<source src="wav\121-127105-0002rec.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>IFGSM:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/121-127105-0002adv.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>TTS:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/121-127105-0002tts.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>TTS*:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/121-127105-0002advtts.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>VC Source:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/121-127105-0002source.wav">
-			</audio>
-		</td><td>
-		<td>VC:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/121-127105-0002vc.wav">
-			</audio>
-		</td>
-		<td>VC*:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/121-127105-0002advvc.wav">
-			</audio>
-		</td>
-	</tr>
-</tbody></table>
-</tbody></table>
-    <h3>8463</h3>
-    
-	<table><tbody><tr>
-		<td>Reference Speech:</td>
-		<td>
-			<audio controls="">
-				<source src="wav\8463-287645-0003rec.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>IFGSM:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/8463-287645-0003adv.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>TTS:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/8463-287645-0003tts.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>TTS*:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/8463-287645-0003advtts.wav">
-			</audio>
-		</td>
-		<td></td>
-		<td>VC Source:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/8463-287645-0003source.wav">
-			</audio>
-		</td><td>
-		<td>VC:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/8463-287645-0003vc.wav">
-			</audio>
-		</td>
-		<td>VC*:</td>
-		<td>
-			<audio controls="">
-				<source src="wav/8463-287645-0003advvc.wav">
-			</audio>
-		</td>
-	</tr>
-</tbody></table>
+    <div class="container">
+        <section class="col-md-12 content" id="home">
+           <div class="col-lg-6 col-md-6 content-item tm-black-translucent-bg tm-logo-box">
+              <!-- <i class="fa fa-snowflake-o fa-4x tm-logo"></i> -->
+              <img src="css\speech-icon.png" alt="Image 1" > 
+              <h2 class="main-title">On the Generation and Removal of Speaker Adversarial Perturbation for Voice Privacy Protection</h2>
+              <p>Authors: Chenyang Guo, Liping Chen, KongAik Lee, Zhen-Hua Ling, Wu Guo<p>    
+           </div>
+
+       </section>
+
+       <div class="col-lg-6 col-md-6 content-item content-item-1 background tm-white-translucent-bg">
+        <h2 class="main-title text-center dark-blue-text">Abstract</h2>
+        <p>Recent development in adversarial perturbation has shown the usefulness of the technique for voice privacy protection. This paper examines the situation where an  entity generating the speaker adversarial perturbations is authorized (e.g., the speaker him/herself) to remove them and restore the original speech. Similar technique could also be used to restore criminals’ identities in security and forensic analysis. In this settings, the process of perturbation removal is well-informed of the perturbation generation. To this end, a joint training framework of the modules for both perturbation generation and removal is proposed. Our experiments on the LibriSpeech dataset demonstrated that the adversarial perturbations added to the original speech can be predicted from the adversarial speech sample. By removing these perturbations from the adversarial sample, the original speech can be restored.</p>               
+       </div>
+
+
+       <section class="col-md-12 content padding tm-equal-col-container" id="services">
+        <div class="col-lg-6 col-md-6 col-sm-12 content-item tm-black-translucent-bg tm-services-section-padding">
+          <h2 class="main-title text-center dark-blue-text">Samples' Information</h2>
+           <p>Here, we showcase the adversarial utterances generated using the SSED to attack the ECAPA-TDNN model and the restored utterances generated by our reverse perturbation generator from adversarial utterances. We randomly selected one sentence each from 3 males and 3 females of librispeech test-clean dataset and using these original samples to generate adversarial and restored samples . In this context, 'Original' is defined as the original speech, 'Adversarial' as the adversarial speech with perturbation added , 'Restored' as the restored speech which is the adversarial speech with reverse perturbation added.</p>
+           <!-- <button type="button" class="btn btn-big pull-right tm-btn-primary">Read More</button> -->
+       </div>
+
+                      
+       </div>
+
+      </section>
+
+      <div class="tm-float-section-header">
+        <h2 class="text-center tm-white-text tm-section-3-header">Samples</h2>  
+      </div>
+
+      <section class="col-md-12 content padding tm-float-section tm-section-3">
+
+      <!-- <div class="col-lg-6 col-md-6 content-item tm-black-translucent-bg tm-logo-box"></div> -->
+      <!-- <div class="content-item "></div> -->
+      
+
+      <div class="tm-float-section-body tm-white-bg">
+        <table><tbody><tr>
+          <td>2094&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+          <td>Original:</td>
+          <td>
+            <audio controls="">
+              <source src="wav/2094-142345-0016-original_sample.wav">
+            </audio>
+          </td>
+          <td>Adversarial:</td>
+          <td>
+            <audio controls="">
+              <source src="wav/2094-142345-0016-adversarial_sample.wav">
+            </audio>
+          </td>
+          <td>Restored:</td>
+          <td>
+            <audio controls="">
+              <source src="wav/2094-142345-0016-restored_sample.wav">
+            </audio>
+          </td>
+        </tr>
+      </tbody></table>
+      <table><tbody><tr>
+        <td>3575&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td>Original:</td>
+        <td>
+          <audio controls="">
+            <source src="wav/3575-170457-0054-original_sample.wav">
+          </audio>
+        </td>
+        <td>Adversarial:</td>
+        <td>
+          <audio controls="">
+            <source src="wav/3575-170457-0054-adversarial_sample.wav">
+          </audio>
+        </td>
+        <td>Restored:</td>
+        <td>
+          <audio controls="">
+            <source src="wav/3575-170457-0054-restored_sample.wav">
+          </audio>
+        </td>
+      </tr>
+    </tbody></table>
+        <table><tbody><tr>
+          <td>4077&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+          <td>Original:</td>
+          <td>
+            <audio controls="">
+              <source src="wav/4077-13754-0011-original_sample.wav">
+            </audio>
+          </td>
+          <td>Adversarial:</td>
+          <td>
+            <audio controls="">
+              <source src="wav/4077-13754-0011-adversarial_sample.wav">
+            </audio>
+          </td>
+          <td>Restored:</td>
+          <td>
+            <audio controls="">
+              <source src="wav/4077-13754-0011-restored_sample.wav">
+            </audio>
+          </td>
+        </tr>
+      </tbody></table>
+          <table><tbody><tr>
+          <td>4970 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+          <td>Original:</td>
+          <td>
+            <audio controls="">
+              <source src="wav/4970-29093-0000-original_sample.wav">
+            </audio>
+          </td>
+          <td>Adversarial:</td>
+          <td>
+            <audio controls="">
+              <source src="wav/4970-29093-0000-adversarial_sample.wav">
+            </audio>
+          </td>
+          <td>Restored:</td>
+          <td>
+            <audio controls="">
+              <source src="wav/4970-29093-0000-restored_sample.wav">
+            </audio>
+          </td>
+        </tr>
+      </tbody></table>
+      <table><tbody><tr>
+        <td>7127&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td>Original:</td>
+        <td>
+          <audio controls="">
+            <source src="wav/7127-75946-0029-original_sample.wav">
+          </audio>
+        </td>
+        <td>Adversarial:</td>
+        <td>
+          <audio controls="">
+            <source src="wav/7127-75946-0029-adversarial_sample.wav">
+          </audio>
+        </td>
+        <td>Restored:</td>
+        <td>
+          <audio controls="">
+            <source src="wav/7127-75946-0029-restored_sample.wav">
+          </audio>
+        </td>
+      </tr>
+    </tbody></table>
+    <table><tbody><tr>
+      <td>8230&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+      <td>Original:</td>
+      <td>
+        <audio controls="">
+          <source src="wav/8230-279154-0027-original_sample.wav">
+        </audio>
+      </td>
+      <td>Adversarial:</td>
+      <td>
+        <audio controls="">
+          <source src="wav/8230-279154-0027-adversarial_sample.wav">
+        </audio>
+      </td>
+      <td>Restored:</td>
+      <td>
+        <audio controls="">
+          <source src="wav/8230-279154-0027-restored_sample.wav">
+        </audio>
+      </td>
+    </tr>
+  </tbody></table>
+      </div>
+        
+      </section>
+
+   <!-- <section class="col-md-12 content" id="contact">
+       <div class="col-lg-6 col-md-6 content-item tm-content-box tm-black-translucent-bg">
+           <h2 class="contact-title">.04 Contact Info</h2>
+           <p>In dapibus blandit congue. Sed quam nulla, pellentesque eget metus eu, sollicitudin sodales nisl. Integer tempus id lectus quis cursus.</p>
+           <p>
+             Tel: 010-020-0120<br>
+             Fax: 060-070-0670<br>
+             Email: info@company.com
+           </p>
+       </div>
+       <div class="col-lg-6 col-md-6 content-item tm-content-box tm-white-translucent-bg">
+           
+           <form action="#" method="post" name="contact-form" class="contact-form">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group contact-field">
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group contact-field">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required></textarea>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group margin-b-0">
+                    <button type="submit" id="form-submit" class="btn pull-right btn-contact tm-btn-primary">Submit</button>
+                </div>    
+            </div>
+        </form>
+        </div>
+        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+
+    </div>
+
+</section> -->
+
 </div>
 
-</body></html>
+<!-- <div class="text-center footer">
+	<div class="container">
+		Copyright &copy; <span class="tm-current-year">2017</span> Company 
+        
+        | Design: <a href="http://www.templatemo.com" target="_parent">templatemo</a>
+    </div>
+</div> -->
+
+<script>
+
+// Write current year in copyright text.
+  document.getElementsByClassName("tm-current-year").value = new Date().getFullYear();
+
+</script>
+</body>
+</html>
